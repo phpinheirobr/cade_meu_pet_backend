@@ -1,4 +1,9 @@
 ##############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
 ## Java
 ##############################
 .mtj.tmp/
@@ -60,6 +65,17 @@ tmp/
 local.properties
 .loadpath
 .factorypath
+
+##############################
+## STS
+##############################
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
 ##############################
 ## NetBeans
