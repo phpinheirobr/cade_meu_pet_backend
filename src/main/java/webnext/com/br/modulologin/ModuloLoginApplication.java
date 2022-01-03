@@ -1,13 +1,13 @@
-package webnext.com.br.cademeupet;
+package webnext.com.br.modulologin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CademeupetApplication {
+public class ModuloLoginApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CademeupetApplication.class, args);
+		SpringApplication.run(ModuloLoginApplication.class, args);
 	}
 
 }

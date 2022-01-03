@@ -1,10 +1,10 @@
-package webnext.com.br.cademeupet;
+package webnext.com.br.modulologin;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CademeupetApplicationTests {
+class ModuloLoginApplicationTests {
 
 	@Test
 	void contextLoads() {
