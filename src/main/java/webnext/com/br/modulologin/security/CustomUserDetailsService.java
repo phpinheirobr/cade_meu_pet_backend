@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import webnext.com.br.modulologin.exception.ResourceNotFoundException;
 import webnext.com.br.modulologin.model.User;
 import webnext.com.br.modulologin.repository.UserRepository;
 
