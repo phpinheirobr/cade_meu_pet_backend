@@ -2,7 +2,8 @@ package webnext.com.br.modulologin.model;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.Set;
+import java.util.List;
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -61,6 +62,6 @@ public class User implements Serializable {
 	joinColumns = { @JoinColumn(name = "USER_ID") }, 
 	inverseJoinColumns = {
 			@JoinColumn(name = "ROLE_ID") })
-	private Set<Role> roles;
+	private List<Role> roles;
 
 }
