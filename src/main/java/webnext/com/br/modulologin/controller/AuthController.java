@@ -54,9 +54,9 @@ public class AuthController {
 		try {
 			userService.registerNewUser(signUpRequest);
 		} catch (UserAlreadyExistAuthenticationException e) {
-			log.error("Exception Ocurred", e);
-			return new ResponseEntity<>(new ApiResponse(false, "Email Address already in use!"), HttpStatus.BAD_REQUEST);
+			log.error("Ocorreu uma exceção", e);
+			return new ResponseEntity<>(new ApiResponse(false, "Endereço de email já está em uso!"), HttpStatus.BAD_REQUEST);
 		}
-		return ResponseEntity.ok().body(new ApiResponse(true, "User registered successfully"));
+		return ResponseEntity.ok().body(new ApiResponse(true, "Usuário cadastrado com sucesso"));
 	}
 }

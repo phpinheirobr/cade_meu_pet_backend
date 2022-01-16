@@ -30,10 +30,10 @@ app:
     tokenExpirationMsec: 864000000
 
   oauth2:
-    # After successfully authenticating with the OAuth2 Provider,
-    # we'll be generating an auth token for the user and sending the token to the
-    # redirectUri mentioned by the client in the /oauth2/authorize request.
-    # We're not using cookies because they won't work well in mobile clients.
+     # Depois de autenticar com sucesso com o provedor OAuth2,
+     # estaremos gerando um token de autenticação para o usuário e enviando o token para o
+     # redirectUri mencionado pelo cliente na solicitação /oauth2/authorize.
+     # Não estamos usando cookies porque eles não funcionam bem em clientes móveis.
     authorizedRedirectUris:
       - http://localhost:8081/oauth2/redirect
       - myandroidapp://oauth2/redirect
