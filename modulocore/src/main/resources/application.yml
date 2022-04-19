@@ -1,11 +1,11 @@
 maven:
     properties:
-        packageBase: '@package.base@'
+        packageBase: 'br.com.webnext'
 spring:
     datasource:
-        url: '@jdbc.url@'
-        username: '@jdbc.username@'
-        password: '@jdbc.password@'
+        url: 'jdbc:mysql://myapp-mysql:3306/demo?useSSL=false&allowPublicKeyRetrieval=true'
+        username: 'root'
+        password: 'root'
 
     jpa:
         show-sql: true

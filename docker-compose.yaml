@@ -1,0 +1,33 @@
+version: "3"
+
+services:
+
+  myapp-mysql:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=demo
+      - MYSQL_USER=myapp-root
+      - MYSQL_PASSWORD=root
+    ports:
+      - 3306:3306
+
+  myapp-main:
+    image: pinheiropedro/archetype-test:v1
+    restart: on-failure
+    depends_on:
+      - myapp-mysql
+    ports:
+      - 8080:8080
+    environment:
+      - DATABASE_HOST=localhost
+      - DATABASE_USER=root
+      - DATABASE_PASSWORD=root
+      - DATABASE_NAME=demo
+      - DATABASE_PORT=3306
+
+      
+      
+
+
+   
