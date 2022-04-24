@@ -3,7 +3,7 @@ maven:
         packageBase: 'br.com.webnext'
 spring:
     datasource:
-        url: 'jdbc:mysql://myapp-mysql:3306/demo?useSSL=false&allowPublicKeyRetrieval=true'
+        url: 'jdbc:mysql://localhost:3306/demo?useSSL=false&allowPublicKeyRetrieval=true'
         username: 'root'
         password: 'root'
 
